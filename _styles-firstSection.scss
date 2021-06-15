@@ -1,0 +1,53 @@
+#firstSection {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    padding: 10vw 6vw;
+    font-family: $font2;
+    font-weight: $font2Weight1;
+    overflow: hidden;
+    z-index: 3;
+}
+#firstTitle {
+    padding-bottom: 1vw;
+    width: 88vw;
+    margin: 0 auto;
+    color: $headingsDBlue;
+    text-align: center;
+    font-size: 3vw;
+}
+#firstSection-content {
+    figure {
+        position: relative;
+        top: -60vw;
+        left: 45vw;
+        width: 40vw;
+        z-index: 4;
+    }
+}
+#firstSectionSVG {
+    position: absolute;
+    width: 70vw;
+    height: auto;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+#firstSection-textContent {
+    padding: 9vw 3vw;
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    z-index: 5;
+    .myTitle2 {
+        margin: 2vw 0;
+        font-size: 2vw;
+    }
+    .content {
+        line-height: 2.2vw;
+        font-size: 1.3vw;
+    }
+}
+#firstSectionSVGmobile {
+    display: none;
+}

@@ -1,0 +1,52 @@
+#secondSection {
+    width: 100vw;
+    height: 155vw;
+    font-family: $font2;
+    border-bottom-left-radius: 50px;
+    border-top-right-radius: 50px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    // z-index: 4;
+
+}
+#secondArticle {
+    margin-top: 7vw;
+    padding: 10vw 8vw;
+    z-index: 5;
+    height: 100vw;
+    #secondTitle {
+        text-align: center;
+        margin: 5vw 0;
+        padding: 0 12vw;
+        font-size: 6vw;
+    }
+    .content {
+        text-align: center;
+        line-height: 8vw;
+        font-size: 4.5vw;
+    }
+}
+figure {
+    height: 50vw;
+    #secondSectionSVG {
+        width: 140vw;
+        object-fit: cover;
+        position: relative;
+        top: -40vw;
+        left: -20vw;
+        overflow-x: hidden;
+        overflow-y: hidden;
+        z-index: 2;
+    }
+    #secondSectionPhonesSVG { 
+        width: 90vw;
+        position: absolute;
+        left: 5vw;
+        top: -30vw;
+        z-index: 4;
+        overflow: visible;
+    }
+}
+
+

@@ -1,0 +1,45 @@
+#secondSection {
+    font-family: $font2;
+    padding: 0;
+    display: flex;
+    border-bottom-left-radius: 50px;
+    border-top-right-radius: 50px;
+    position: relative;
+    figure {
+        width: 40vw;
+        height: auto;
+    }
+}
+figure {
+    #secondSectionSVG {
+        width: 50vw;
+        height: auto;
+        position: relative;
+        overflow-y: hidden;
+        top: -21vw;
+        left: -11vw;
+        z-index: 2;
+    }
+    #secondSectionPhonesSVG {
+        height: 42vw;
+        width: auto;
+        z-index: 3;
+        position: relative;
+        left: 8vw;
+        top: -55vw;
+        overflow: visible;
+    }
+}
+
+#secondArticle {
+    padding: 5vw 8vw;
+    #secondTitle {
+        margin: 2vw 0;
+        font-size: 3vw;
+        font-weight: $font2Weight1;
+    }
+    .content {
+        line-height: 2.2vw;
+        font-size: 1.3vw;
+    }
+}

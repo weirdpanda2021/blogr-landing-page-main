@@ -1,0 +1,65 @@
+#firstSection {
+    height: 280vw;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    padding: 4vw 6vw;
+    font-family: $font2;
+    font-weight: $font2Weight1;
+    overflow: hidden;
+    z-index: 3;
+}
+#firstTitle {
+    padding: 8vw 0 4vw 0;
+    color: $headingsDBlue;
+    text-align: center;
+    font-size: 7vw;
+}
+#firstSection-content {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 80vw 100vw;
+    grid-template-areas: 'firstPicture' 'firstSection1' 'firstSection2';
+    figure {
+        width: 88vw;
+        height: fit-content;
+        position: relative;
+        top: 0;
+        left: 0;
+        grid-area: firstPicture;
+        overflow: hidden;
+        #firstSectionSVG {
+            display: none;
+        }
+        #firstSectionSVGmobile {
+            display: block;
+            height: 70vw;
+            margin: 5vw 0;
+        }
+    }
+}
+#firstSection-textContent {
+    z-index: 5;
+    width: 88vw;
+    .myTitle2 {
+        text-align: center;
+        margin: 5vw 0;
+        padding: 0 12vw;
+        font-size: 6vw;
+    }
+    .content {
+        text-align: center;
+        line-height: 7vw;
+        font-size: 4vw;
+    }
+    
+    article {
+        width: 88vw;
+    }
+    #firstArticle1 {
+        grid-area: firstSection1;
+    }
+    #firstArticle2 {
+        grid-area: firstSection2;
+    }
+}

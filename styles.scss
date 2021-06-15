@@ -1,0 +1,85 @@
+// ## Colors
+// ### Primary
+$textCTA: hsl(356, 100%, 66%); // - Light red (CTA text)
+$hoverBgrCTA: hsl(355, 100%, 74%); // - Very light red (CTA hover background)
+$headingsDBlue: hsl(208, 49%, 24%); // - Very dark blue (headings)
+// ### Neutral
+$textWhite: hsl(0, 0%, 100%); // - White (text) 
+$textFooter: hsl(240, 2%, 79%); // - Grayish blue (footer text)
+$bodyCopyBlue: hsl(207, 13%, 34%); // - Very dark grayish blue (body copy)
+$footerBgrBlue: hsl(240, 10%, 16%); // - Very dark black blue (footer background)
+// ### Gradient
+// Background gradient - Intro/CTA mobile nav:
+$bgrGradientRed: hsl(13, 100%, 72%); // - Very light red
+$bgrGradientRed2: hsl(353, 100%, 62%); // - Light red
+// Background gradient - body:
+$bgrGradientBlue: hsl(237, 17%, 21%); // - Very dark gray blue
+$bgrGradientBlue2: hsl(237, 23%, 32%);// - Very dark desaturated blue
+// ## Typography
+// ### Body Copy
+// - Font size: 16px
+// ### Fonts
+$font1: 'Overpass', monospace;
+$font1Weight1: 300;
+$font1Weight2: 600;
+$font2: Ubuntu, sans-serif;
+$font2Weight1: 400;
+$font2Weight2: 500;
+$font2Weight3: 700;
+// - Family: [Overpass](https://fonts.google.com/specimen/Overpass?preview.text_type=custom)
+// - Weights: 300, 600
+// - Family: [Ubuntu](https://fonts.google.com/specimen/Ubuntu?preview.text_type=custom)
+// - Weights: 400, 500, 700
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.whiteText {
+    color: $textWhite;
+}
+
+
+
+.light-dark {
+    background-color: #fff;
+    h3 {
+        color: $headingsDBlue;
+    }
+    p {
+        color: $bodyCopyBlue;
+    }
+}
+.dark-light {
+    background-image: linear-gradient(to right, $bgrGradientBlue, $bgrGradientBlue2);
+    color: $textWhite;
+}
+
+@media screen and (min-width: 620px) {
+    body {
+        display: grid;
+        grid-template-rows: 45vw 80vw 30vw 80vw 35vw;
+        grid-template-columns: 100vw;
+    }
+    @import 'styles-header';
+    @import 'styles-firstSection';
+    @import 'styles-secondSection';
+    @import 'styles-thirdSection';
+    @import 'styles-footer';
+}
+
+@media screen and (max-width: 620px) {
+    body {
+        display: grid;
+        grid-template-rows: 120vw 280vw 155vw 240vw 160vw;
+    }
+    .blackTextMobile {
+        color: #000;
+    }
+    @import 'styles-header-620px';
+    @import 'styles-firstSection-620px';
+    @import 'styles-secondSection-620px';
+    @import 'styles-thirdSection-620px';
+    @import 'styles-footer-620px';
+}

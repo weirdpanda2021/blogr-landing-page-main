@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <title>Frontend Mentor | [Blogr]</title>
+</head>
+<body>
+  <header>
+    <img id="headerSVG" src="images/logo.svg">
+    <img id="patternHeader" src="images/bg-pattern-intro.svg">
+    <img id="menuBurger" src="images/icon-hamburger.svg">
+    <img id="menuClose" src="images/icon-close.svg">
+    <nav id="navbar">
+      <ul id="links">
+          <li id="li1" class="whiteText blackTextMobile navUl">Product
+            <span class="lightArrow">
+              <img src="images/icon-arrow-light.svg" alt="light arrow">
+            </span>
+            <span class="pinkArrow">
+              <img src="images/icon-arrow-dark.svg" alt="pink arrow">
+            </span>
+            <ul class="detailsBlock" id="block1">
+              <li class="details-block">Overview</li>
+              <li class="details-block">Pricing</li>
+              <li class="details-block">Marketplace</li>
+              <li class="details-block">Features</li>
+              <li class="details-block">Integrations</li>
+            </ul>
+          </li>
+          <li id="li2" class="whiteText blackTextMobile navUl">Company
+            <span class="lightArrow">
+              <img src="images/icon-arrow-light.svg" alt="light arrow">
+            </span>
+            <span class="pinkArrow">
+              <img src="images/icon-arrow-dark.svg" alt="pink arrow">
+            </span>
+            <ul class="detailsBlock" id="block2">
+              <li class="details-block">About</li>
+              <li class="details-block">Team</li>
+              <li class="details-block">Blog</li>
+              <li class="details-block">Careers</li>
+            </ul>
+          </li>
+          <li id="li3" class="whiteText blackTextMobile navUl">Connect
+            <span class="lightArrow">
+              <img src="images/icon-arrow-light.svg" alt="light arrow">
+            </span>
+            <span class="pinkArrow">
+              <img src="images/icon-arrow-dark.svg" alt="pink arrow">
+            </span>
+            <ul class="detailsBlock" id="block3">
+              <li class="details-block">Contact</li>
+              <li class="details-block">Newsletter</li>
+              <li class="details-block">LinkedIn</li>
+            </ul>
+          </li>
+      </ul>
+      <div id="btn">
+        <button id="btnLogin" class="whiteText blackTextMobile">Login</button>
+        <button id="btnSignUp" class="redText">Sign Up</button>
+      </div>
+    </nav>
+    <article id="headerArticle">
+      <h1 id="myTitle" class="whiteText">A modern publishing platform</h1>
+      <h4 id="mySubtitle" class="whiteText">Grow your audience and build your online brand</h4>
+      <div id="btn2">
+        <button id="btnStartFree" class="redText">Start for Free</button>
+        <button id="btnLearnMore" class="whiteText">Learn More</button>
+      </div>
+    </article>
+  </header>
+
+  <section id="firstSection" class="light-dark">
+    <h2 id="firstTitle">Designed for the future</h2>
+    <section id="firstSection-content">
+      <section id="firstSection-textContent">
+        <article id="firstArticle1">
+          <h3 class="myTitle2">Introducing an extensible editor</h3>
+          <p class="content">Blogr features an exceedingly intuitive interface which lets you focus on one thing: creating content. 
+            The editor supports management of multiple blogs and allows easy manipulation of embeds such as images, 
+            videos, and Markdown. Extensibility with plugins and themes provide easy ways to add functionality or 
+            change the looks of a blog.</p>
+        </article>
+        <article id="firstArticle2">
+          <h3 class="myTitle2">Robust content management</h3>
+          <p class="content">Flexible content management enables users to easily move through posts. Increase the usability of your blog 
+            by adding customized categories, sections, format, or flow. With this functionality, you’re in full control.</p>
+        </article>
+      </section>
+      <figure>
+        <img id="firstSectionSVG" src="images/illustration-editor-desktop.svg">
+        <img id="firstSectionSVGmobile" src="images/illustration-editor-mobile.svg">
+      </figure>
+    </section>
+  </section> 
+  
+  <section id="secondSection" class="dark-light">
+    <figure>
+      <img id="secondSectionSVG" src="images/bg-pattern-circles.svg">
+      <img id="secondSectionPhonesSVG" src="images/illustration-phones.svg">
+    </figure>
+    <article id="secondArticle">
+      <h2 id="secondTitle" class="whiteText">State of the Art Infrastructure</h2>
+      <p class="content" class="whiteText">With reliability and speed in mind, worldwide data centers provide the backbone for ultra-fast connectivity. 
+        This ensures your site will load instantly, no matter where your readers are, keeping your site competitive.</p>
+    </article>
+  </section>
+  
+  <section id="thirdSection" class="light-dark">
+    <section id="thirdSection-content">
+      <figure>
+        <img id="thirdSectionSVG" src="images/illustration-laptop-desktop.svg">
+        <img id="thirdSectionSVGmobile" src="images/illustration-laptop-mobile.svg">
+      </figure>
+      <section id="thirdSection-textContent">
+        <article>
+          <h3 class="myTitle2">Free, open, simple</h3>
+          <p class="content">Blogr is a free and open source application backed by a large community of helpful developers. It supports 
+            features such as code syntax highlighting, RSS feeds, social media integration, third-party commenting tools, 
+            and works seamlessly with Google Analytics. The architecture is clean and is relatively easy to learn.</p>
+        </article>
+        <article>
+          <h3 class="myTitle2">Powerful tooling</h3>
+          <p class="content">Batteries included. We built a simple and straightforward CLI tool that makes customization and deployment a breeze, but
+            capable of producing even the most complicated sites.</p>
+        </article>
+      </section>
+    </section>
+  </section>
+
+  <footer class="whiteText">
+    <div class="footerContent">
+      <img id="footerSVG" src="images/logo.svg">
+      <section class="sectionLinks">
+        <p class="myTitle3">Product</p>
+        <div class="footerLinks">
+          <a href="#">Overview</a>
+          <a href="#">Pricing</a>
+          <a href="#">Marketplace</a>
+          <a href="#">Features</a>
+          <a href="#">Integrations</a>
+        </div>
+      </section>
+      <section class="sectionLinks">
+        <p class="myTitle3">Company</p>
+        <div class="footerLinks">
+          <a href="#">About</a>
+          <a href="#">Team</a>
+          <a href="#">Blog</a>
+          <a href="#">Careers</a>
+        </div>
+      </section>
+      <section class="sectionLinks">
+        <p class="myTitle3">Connect</p>
+        <div class="footerLinks">
+          <a href="#">Contact</a>
+          <a href="#">Newsletter</a>
+          <a href="#">LinkedIn</a>
+        </div>
+      </section>
+    </div>
+    <section class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="https://github.com/weirdpanda2021" target="_blank">Jasmin</a>.
+    </section>
+  </footer>  
+  <script type="text/javascript" src="app.js"></script>
+  
+</body>
+</html>

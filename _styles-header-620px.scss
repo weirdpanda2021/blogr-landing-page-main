@@ -1,0 +1,153 @@
+header {
+    background-image: linear-gradient(to right, $bgrGradientRed, $bgrGradientRed2); //tbc
+    padding: 2.5vw 6vw;
+    border-bottom-left-radius: 15%;
+    width: 100vw;
+    position: relative;
+    height: 120vw;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+#menuBurger, #menuClose {
+    width: 6vw;
+    height: auto;
+    position: absolute;
+    top: 8vw;
+    right: 8vw;
+    z-index: 3;
+}
+#menuBurger:hover, #menuClose:hover {
+    cursor: pointer;
+}
+#menuBurger {
+    display: block;
+}
+#menuClose {
+    display: none;
+}
+#navbar {
+    color: #000;
+    font-family: $font2;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 0.5rem;
+    padding: 6vw;
+    width: 75vw;
+    height: 78vh;
+    box-shadow: 0.8vw 0.8vw 0.8vw 0.8vw hsla(0, 0%, 13%, 0.2);
+    position: absolute;
+    top: 17vw;
+    left: 11vw;
+    z-index: 4;
+    display: none;
+    li {
+        list-style-type: none;
+    }
+    #links {
+        height: 50vh;
+        // display: flex;
+        // flex-direction: column;
+        // justify-content: space-around;
+        li {
+            margin-top: 3vw;
+        }
+        #block1, #block2, #block3 {
+            padding: 1vw 0 3vw 0;
+            border-radius: 0.5rem;
+            background-color: hsl(0, 2%, 62%);
+            display: none;
+            li:hover {
+                font-weight: bold;
+            }
+        }
+        li:hover {
+            cursor: pointer;
+            color:hsla(0, 0%, 4%, 0.7);
+        }
+    }
+
+}
+// .detailsBlock {
+//     display: none;
+// }
+
+#btn {
+    padding: 2vw 0;
+    border-top: 1px solid hsl(0, 2%, 62%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#patternHeader {
+    position: absolute;
+    top: -55vw;
+    left: -50vw;
+    width: 230vw;
+    height: auto;
+    z-index: 1;
+    object-fit: cover;
+}
+#headerArticle {
+    height: 70vw;
+    padding: 0 5vw;
+    position: relative;
+    top: 35vw;
+    z-index: 2;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    #myTitle {
+        font-size: 8.5vw;
+        font-family: $font2;
+        font-weight: $font2Weight1;
+    }
+    #mySubtitle {
+        font-family: $font1;
+        font-size: 4vw;
+        font-weight: $font1Weight1;
+        padding-bottom: 4vw;
+    }
+}
+#headerSVG {
+    z-index: 2;
+    width: 25vw;
+    height: auto;
+    position: absolute;
+    top: 8vw;
+    left: 8vw;
+}
+button {
+    border-color: #fff;
+    width: fit-content;
+    font-size: 3vw;
+    min-width: 30vw;
+    font-size: 3vw;
+    padding: 3vw 2vw;
+    border-radius: 100px;
+    font-family: $font2;
+    font-weight: $font2Weight2;
+}
+button:hover {
+    cursor: pointer;
+}
+#btnSignUp:hover, #btnStartFree:hover {
+    color: #fff;
+    background-color: $hoverBgrCTA;
+    border-color: transparent;
+}
+#btnLearnMore:hover {
+    background-color: #fff;
+    color: $textCTA;
+}
+#btnLogin {
+    border-color: transparent;
+}
+#btnLogin, #btnLearnMore {
+    background-color: transparent;
+}
+.redText {
+    color: $textCTA;
+}

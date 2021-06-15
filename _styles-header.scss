@@ -1,0 +1,150 @@
+header {
+    background-image: linear-gradient(to right, $bgrGradientRed, $bgrGradientRed2); //tbc
+    padding: 2.5vw 6vw;
+    border-bottom-left-radius: 10rem;
+    width: 100%;
+    position: relative;
+    height: 45vw;
+    overflow: hidden;
+    display: grid;
+    grid-template-rows: 15% 85%;
+    grid-template-columns: 20% 80%;
+    grid-template-areas: 'logo navbar' 'headerContent headerContent';
+    // display: flex;
+    // flex-direction: column;
+}
+#menuBurger, #menuClose {
+    display: none;
+}
+#headerSVG {
+    width: 10vw;
+    position: relative;
+    // top: 1vw;
+    height: 4vw;
+}    
+#navbar {
+    position: absolute;
+    top: 3vw;
+    width: 70vw;
+    left: 20vw;
+    display: grid;
+    grid-template-areas: 'links nothing buttons';
+    grid-template-columns: 45% 20% 35%;
+    grid-template-rows: 10vw;
+    align-items: baseline;
+    // width: 88vw;
+    font-family: $font2;
+    font-weight: $font2Weight1;
+    font-size: 1.4vw;
+    z-index: 3;
+    #links {
+        grid-area: links;
+        display: grid;
+        grid-template-rows: 10vw;
+        grid-template-columns: repeat(3, 1fr);
+        list-style-type: none;
+        ul {
+            list-style-type: none;
+        }
+        li:hover {
+            text-decoration: underline;
+            cursor: pointer;
+            img {
+                transform: rotate(180deg);
+            }
+            #block1, #block2, #block3 {
+                visibility: visible;
+            }
+        }
+        #block1, #block2, #block3 {
+            visibility: hidden;
+            z-index: 3;
+        }
+        .lightArrow {
+            width: 1.5vw;
+            height: auto;
+            position: relative;
+        }
+        .pinkArrow {
+            display: none;
+        }
+    }
+    #btn {
+        grid-area: buttons;
+        justify-self: center;
+    }
+}
+.detailsBlock {
+    background-color: #fff;
+    color: #000;
+    padding: 1vw;
+    border-radius: 10px;
+    line-height: 3vw;
+    font-size: 1.5vw;
+    box-shadow: 0 0.8vw 0.8vw 0.8vw hsla(0, 0%, 13%, 0.2);
+    li:hover {
+        font-weight: bold;
+    }
+}
+#headerArticle {
+    position: absolute;
+    top: 10vw;
+    left: 6vw;
+    padding: 3vw 0 0vw 0;
+    width: 88vw;
+    height: 25vw;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-content: center;
+    z-index: 1;
+    #myTitle {
+        font-size: 4.5vw;
+        font-family: $font2;
+        font-weight: $font2Weight1;
+    }
+    #mySubtitle {
+        font-size: 1.5vw;
+        font-family: $font2;
+        font-weight: $font2Weight1;
+    }
+}
+button {
+    border-color: #fff;
+    width: fit-content;
+    min-width: 8vw;
+    font-size: 1.3vw;
+    padding: 1vw 0.8vw;
+    border-radius: 100px;
+    font-family: $font2;
+    font-weight: $font2Weight2;
+}
+button:hover {
+    cursor: pointer;
+}
+#btnSignUp:hover, #btnStartFree:hover {
+    color: #fff;
+    background-color: $hoverBgrCTA;
+    border-color: transparent;
+}
+#btnLearnMore:hover {
+    background-color: #fff;
+    color: $textCTA;
+}
+#patternHeader {
+    position: absolute;
+    top: -55vw;
+    left: -10vw;
+    width: 140vw;
+    height: auto;
+}
+#btnLogin {
+    border-color: transparent;
+}
+#btnLogin, #btnLearnMore {
+    background-color: transparent;
+}
+.redText {
+    color: $textCTA;
+}

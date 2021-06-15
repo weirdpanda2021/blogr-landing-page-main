@@ -1,0 +1,34 @@
+#thirdSection {
+    width: 100vw;
+    padding: 4vw 6vw;
+    figure {
+        height: 85vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        object-fit: cover;
+        #thirdSectionSVG {
+            display: none;
+        }
+        #thirdSectionSVGmobile {
+            height: 85vw;
+            object-fit: cover;
+            display: block;
+        }
+    }
+}
+#thirdSection-textContent {
+    height: 127vw;
+    font-family: $font2;
+    .myTitle2 {
+        text-align: center;
+        margin: 5vw 0;
+        padding: 0 12vw;
+        font-size: 6vw;
+    }
+    .content {
+        text-align: center;
+        line-height: 7vw;
+        font-size: 4vw;
+    }
+}
